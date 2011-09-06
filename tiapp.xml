@@ -7,13 +7,13 @@
         <target device="android">false</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <id>com.appc.pinball</id>
+    <id>com.appcelerator.tiball</id>
     <name>Pinball</name>
     <version>1.0</version>
-    <publisher>mapperson</publisher>
-    <url>http://</url>
-    <description>not specified</description>
-    <copyright>2011 by mapperson</copyright>
+    <publisher>Appcelerator Developer Relations</publisher>
+    <url>http://developer.appcelerator.com</url>
+    <description>Basic Pinball game using the box2d module. Currently only for iPhone.</description>
+    <copyright>2011 by Appcelerator Inc</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
@@ -36,6 +36,6 @@
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android"/>
     <modules>
-    	<module version="0.1">ti.box2d</module>
+        <module version="0.1">ti.box2d</module>
     </modules>
 </ti:app>

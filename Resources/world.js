@@ -269,7 +269,7 @@
         app.world.flipperRightRef = world.addBody(flipperR, {
             density: 10.0,
             friction: 0.3,
-            restitution: 0.8,
+            restitution: 1.2,
             type: "dynamic"
         });
         
@@ -277,7 +277,7 @@
         app.world.flipperLeftRef = world.addBody(flipperL, {
             density: 10.0,
             friction: 0.3,
-            restitution: 0.8,
+            restitution: 1.2,
             type: "dynamic"
         });
         

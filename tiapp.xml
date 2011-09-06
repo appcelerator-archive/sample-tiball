@@ -14,7 +14,7 @@
     <url>http://developer.appcelerator.com</url>
     <description>Basic Pinball game using the box2d module. Currently only for iPhone.</description>
     <copyright>2011 by Appcelerator Inc</copyright>
-    <icon>appicon.png</icon>
+    <icon>pinball_icon_57.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>

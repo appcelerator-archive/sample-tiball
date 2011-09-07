@@ -77,7 +77,7 @@
         
         // The deflector to aim the ball so it moves into the game board
         var deflector = Ti.UI.createView({
-            backgroundColor: "green",
+            backgroundColor: "transparent",
             width: 50,
             right:-10,
             height: 2,

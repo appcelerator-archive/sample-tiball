@@ -23,7 +23,7 @@
             backgroundColor: "transparent",
             width: 2,
             right:38,
-            height: 366,
+            height: 362,
             bottom: 0
         });
         
@@ -77,9 +77,9 @@
         
         // The deflector to aim the ball so it moves into the game board
         var deflector = Ti.UI.createView({
-            backgroundColor: "transparent",
-            width: 70,
-            right:-5,
+            backgroundColor: "green",
+            width: 50,
+            right:-10,
             height: 2,
             top: 15
         });
@@ -263,7 +263,7 @@
             restitution: 0.4,
             type: "static"        	
         });
-        app.world.shootHookRef.setAngle(-0.50);
+        app.world.shootHookRef.setAngle(-0.60);
         
         // add body to the world
         app.world.plungerRef = world.addBody(plunger, {
@@ -280,7 +280,7 @@
             restitution: 0.4,
             type: "static"
         });
-        app.world.deflectorRef.setAngle(-0.8);
+        app.world.deflectorRef.setAngle(-1);
     
         // add body to the world
         app.world.gutterRightRef = world.addBody(gutter1, {

@@ -84,6 +84,25 @@
             top: 15
         });
         
+        // The deflector to aim the ball so it moves into the game board
+        var LsideDeflector = Ti.UI.createView({
+            backgroundColor: "transparent",
+            width: 40,
+            left:8,
+            height: 2,
+            top: 280
+        });
+        
+        // The deflector to aim the ball so it moves into the game board
+        var RsideDeflector = Ti.UI.createView({
+            backgroundColor: "transparent",
+            width: 40,
+            right:45,
+            height: 2,
+            top: 280
+        });
+        
+        
         // The first gutter so the ball rolls to the flippers
         var gutter1 = Ti.UI.createView({
             backgroundColor: "transparent",
@@ -214,6 +233,22 @@
         });
         app.world.wallCorner.setAngle(0.2);
         
+        app.world.LsideDeflector = world.addBody(LsideDeflector, {
+            density: 10.0,
+            friction: 0.3,
+            restitution: 0.4,
+            type: "static"          
+        });
+        app.world.LsideDeflector.setAngle(-0.7);
+        
+        app.world.RsideDeflector = world.addBody(RsideDeflector, {
+            density: 10.0,
+            friction: 0.3,
+            restitution: 0.4,
+            type: "static"          
+        });
+        app.world.RsideDeflector.setAngle(0.7);
+        
         // add body to the world
         app.world.shootRef = world.addBody(shoot, {
             density: 1.0,
@@ -269,7 +304,7 @@
         app.world.flipperRightRef = world.addBody(flipperR, {
             density: 10.0,
             friction: 0.3,
-            restitution: 1.2,
+            restitution: 1.0,
             type: "dynamic"
         });
         
@@ -277,7 +312,7 @@
         app.world.flipperLeftRef = world.addBody(flipperL, {
             density: 10.0,
             friction: 0.3,
-            restitution: 1.2,
+            restitution: 1.0,
             type: "dynamic"
         });
         

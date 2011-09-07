@@ -8,7 +8,7 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <id>com.appcelerator.tiball</id>
-    <name>Pinball</name>
+    <name>TiBall</name>
     <version>1.0</version>
     <publisher>Appcelerator Developer Relations</publisher>
     <url>http://developer.appcelerator.com</url>

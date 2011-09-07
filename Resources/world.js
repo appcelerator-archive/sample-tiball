@@ -279,8 +279,8 @@
         app.world.ball = world.addBody(Ti.UI.createView({
             backgroundImage : "/images/ball.png",
             borderRadius : 15,
-            width : 28,
-            height : 28,
+            width : 27,
+            height : 27,
             right : 8,
             bottom : 50,
             shootMe : true

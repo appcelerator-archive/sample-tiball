@@ -23,7 +23,7 @@
             backgroundColor: "transparent",
             width: 2,
             right:38,
-            height: 375,
+            height: 366,
             bottom: 0
         });
         
@@ -31,14 +31,14 @@
         	backgroundColor: "transparent",
         	height: 4,
         	width: 40,
-        	bottom: 375,
+        	bottom: 372,
         	right: 37
         });
         
         var wallR = Ti.UI.createView({
             backgroundColor: "transparent",
             width: 1,
-            right:0,
+            right: 4,
             height: 440,
             bottom: 0
         });
@@ -78,10 +78,10 @@
         // The deflector to aim the ball so it moves into the game board
         var deflector = Ti.UI.createView({
             backgroundColor: "transparent",
-            width: 160,
-            right:0,
+            width: 70,
+            right:-5,
             height: 2,
-            top: 10
+            top: 15
         });
         
         // The first gutter so the ball rolls to the flippers
@@ -152,19 +152,19 @@
         var node = [
         {
             left:35,
-            top: 95
+            top: 105
         },{
             left:130,
-            top: 65
+            top: 75
         },{
             left:210,
-            top: 95
+            top: 105
         },{
         	left:55,
-        	top:190
+        	top:200
         },{
         	left:190,
-        	top:190
+        	top:200
         }
         ];
         
@@ -228,7 +228,7 @@
             restitution: 0.4,
             type: "static"        	
         });
-        app.world.shootHookRef.setAngle(0.20);
+        app.world.shootHookRef.setAngle(-0.50);
         
         // add body to the world
         app.world.plungerRef = world.addBody(plunger, {
@@ -245,7 +245,7 @@
             restitution: 0.4,
             type: "static"
         });
-        app.world.deflectorRef.setAngle(-0.2);
+        app.world.deflectorRef.setAngle(-0.8);
     
         // add body to the world
         app.world.gutterRightRef = world.addBody(gutter1, {
@@ -413,7 +413,7 @@
             if(gameball.shootMe) {
         
                 // FIRE THE GUN!!!!
-                app.world.ballRef.applyLinearImpulse([0,impulse], [7,7]);
+                app.world.ballRef.applyLinearImpulse([0,impulse], [25,25]);
             
                 //READY THE PLUNGER!!!!
                 clearInterval(impulseIntervul);

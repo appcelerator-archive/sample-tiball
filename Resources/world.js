@@ -378,8 +378,21 @@
                             app.world.ballRef.setAwake(true);
                         } else {
                             
-                           // save the high score
-                           if(score > app.hScore) {
+                          
+                                                        
+                            var modal = app.ui.createStartWindow();
+                            
+                            modal.open();
+                            
+                            if(score > app.hScore) {
+                                alert('YOU BEAT THE HIGH SCORE!!');
+                            } else {
+                                alert("Game over!");
+                            }
+                            
+                            
+                            // save the high score
+                            if(score > app.hScore) {
                                 Ti.App.Properties.setInt('high_score', score);
 
                                 app.hScore = score;
@@ -387,11 +400,7 @@
                                 app.ui.highScore.text = 'High Score: ' + app.hScore;
 
                             }
-                                                        
-                            var modal = app.ui.createStartWindow();
                             
-                            modal.open();
-                            alert("Game over!");
                             app.world.ballRef.setAwake(false);
                         }
                     break;

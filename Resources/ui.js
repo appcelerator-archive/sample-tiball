@@ -42,11 +42,11 @@
         modal.add(newGame);
 
         newGame.addEventListener('click', function() {
-            app.world.ballRef.SetTransform({
+            app.world.ball.SetTransform({
                 posX : 300,
                 posY : 420
             });
-            app.world.ballRef.setAwake(true);
+            app.world.ball.setAwake(true);
 
             app.balls = 3;
             app.ui.ballsRemaining.text = 'Balls: 2';

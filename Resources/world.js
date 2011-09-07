@@ -448,7 +448,7 @@
             if(gameball.shootMe) {
         
                 // FIRE THE GUN!!!!
-                app.world.ballRef.applyLinearImpulse([0,impulse], [25,25]);
+                app.world.ballRef.applyLinearImpulse([0,impulse], [19,2]);
             
                 //READY THE PLUNGER!!!!
                 clearInterval(impulseIntervul);

@@ -29,7 +29,7 @@
         	height:'auto',
         	color:'white',
         	font: {fontWeight:'bold'},
-        	text: 'Plunger - Tap the screen anywhere and hold, release to shoot the ball.\n\nFlippers - Tap the screen to flip the flippers.\n\nHigh Score - The high score is saved through closing the app to keep a running high score.'
+        	text: 'Plunger - Tap the screen anywhere and hold, release to shoot the ball.\n\nFlippers - Tap the screen on the right or left side, to flip the right or left flipper.\n\nHigh Score - The high score is saved through closing the app to keep a running high score.'
         });
 		modal.add(message);
 		
